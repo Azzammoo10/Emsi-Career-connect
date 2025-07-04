@@ -166,8 +166,14 @@ emsi-career-connect/
 
 ## 👥 Contributeurs
 
-- [@azzammoo10](https://github.com/azzammoo10) – Backend & intégration Azure
-- [@riyad4589](https://github.com/riyad4589)  – Frontend & UI/UX *(ajouter son lien GitHub si disponible)*
+- **Mohamed Azzam**  
+  Développeur Backend – Intégration de la base de données, sécurisation des routes API, déploiement sur Azure et gestion du stockage cloud.  
+  GitHub : [@azzammoo10](https://github.com/azzammoo10)
+
+- **Majhirou Mohamed Riyad**  
+  Développeur Frontend – Conception de l’interface utilisateur avec React & Tailwind, expérience utilisateur (UI/UX) et intégration des pages dynamiques.  
+  GitHub : [@riyad4589](https://github.com/riyad4589)
+
 
 ---
 
