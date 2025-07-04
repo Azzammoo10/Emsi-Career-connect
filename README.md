@@ -17,8 +17,9 @@
 
 ```bash
 # 1. Cloner le projet
-git clone https://github.com/Azzammoo10/emsi-career-connect.git
-cd emsi-career-connect
+git clone https://github.com/Azzammoo10/Emsi-Career-connect.git
+cd Emsi-Career-connect
+code .
 
 # 2. Installer les dépendances backend
 cd backend
