@@ -183,6 +183,7 @@ Ce projet est réalisé dans le cadre du **Projet de Fin d’Année (PFA)** à l
 
 ---
 
-> 📚 La documentation technique complète sera bientôt disponible ici.  
+> 📚 Pour plus d’infos techniques, consultez la [Documentation technique](./TECH_DOC.md)  
+  
 > 📬 En attendant, vous pouvez me contacter à : [azzam.moo@gmail.com](mailto:azzam.moo@gmail.com)
 
