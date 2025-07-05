@@ -13,34 +13,76 @@
 - Compte Azure (pour déploiement et stockage optionnel)
 - Git
 
-### 🧩 Étapes
 
+## 🚀 Installation et lancement du projet
+
+### 1. Cloner le projet
 ```bash
-# 1. Cloner le projet
 git clone https://github.com/Azzammoo10/Emsi-Career-connect.git
 cd Emsi-Career-connect
 code .
-
-# 2. Installer les dépendances backend
-cd backend
-npm install
-
-# 3. Créer un fichier .env
-cp .env.example .env
-# puis configure les variables comme MONGO_URI, JWT_SECRET, etc.
-
-# 4. Lancer le serveur backend
-npm run dev
-
-# 5. Installer les dépendances frontend
-cd ../frontend
-npm install
-
-# 6. Lancer le serveur frontend
-npm run dev
 ```
 
 ---
+
+### 2. Installer les dépendances backend
+```bash
+cd backend
+npm install
+```
+
+---
+
+### 3. Configurer les variables d’environnement
+```bash
+cp .env.example .env
+```
+➡️ Remplis ensuite les clés obligatoires comme :  
+`MONGO_URI`, `JWT_SECRET`, `CLOUDINARY_*`, `AZURE_STORAGE_CONNECTION_STRING`, etc.  
+*(voir fichier `TECH_DOC.md` pour le détail complet des clés)*
+
+---
+
+### 4. Lancer le serveur backend
+```bash
+npm run dev
+```
+> Le serveur Express.js s’exécute par défaut sur `http://localhost:5000`
+
+---
+
+### 5. Installer les dépendances frontend
+```bash
+cd ../frontend
+npm install
+```
+
+---
+
+### 6. Lancer le serveur frontend
+```bash
+npm run dev
+```
+> L’interface React est accessible via `http://localhost:5173`
+
+---
+
+### 7. Scripts de création d’utilisateurs *(optionnel)*
+Pour générer des comptes de test (admin, recruteurs, lauréats) :
+
+```bash
+cd backend/script-users
+node createAdmin.js
+node createRecruteurs.js
+node createLeaureat1.js
+node createLeaureat2.js
+node createLeaureat3.js
+```
+
+> Ces scripts permettent de simuler une base de données avec plusieurs rôles pour tester la plateforme rapidement.
+
+
+
 
 ## 🚀 Fonctionnalités principales
 
@@ -95,10 +137,6 @@ emsi-career-connect/
 
 ---
 
-
-
----
-
 ### 📧 Email de confirmation
 > Email automatique envoyé après inscription avec message de validation.
 ![Email de confirmation](./assets/confirmation_mail.png)
@@ -111,6 +149,11 @@ emsi-career-connect/
 ### 👤 Profil lauréat validé
 > Exemple de profil complet avec informations, expériences et réseaux.
 ![Profil utilisateur](./assets/profil_valide.png)
+
+---
+### 💬 Assistant virtuel EMSI (Chatbot)
+> Chatbot intelligent intégré à la plateforme pour guider les utilisateurs en temps réel. Il fournit des réponses rapides, des messages de bienvenue, des informations sur la plateforme, et renforce l’aspect interactif du portail.
+![Assistant virtuel EMSI – Chatbot intégré](./assets/chatboot.png)
 
 ---
 
